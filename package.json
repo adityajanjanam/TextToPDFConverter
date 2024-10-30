@@ -2,7 +2,7 @@
   "name": "text-to-pdf-converter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://username.github.io/repository-name",
+  "homepage": "https://adityajanjanam.github.io/TextToPDFConverter",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "jspdf": "^2.5.2",
