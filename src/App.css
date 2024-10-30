@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+:root {
+  /* Default Dark Mode Colors */
+  --bg-color: #181818;
+  --text-color: #f5f5f5;
+  --border-color: #64dd17;
+  --button-bg: linear-gradient(45deg, #ff8a65, #ff5252);
+  --button-text: #ffffff;
+  --button-clear-bg: linear-gradient(45deg, #81d4fa, #0288d1);
+  --input-bg: #333333;
+  --input-focus-border: #ffd740;
+  --message-success-color: #64dd17;
+  --message-error-color: #ff5252;
+  --message-success-shadow: #ffd740;
+  --message-error-shadow: #ff7043;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Mode */
+.app-container.light {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #757575;
+  --button-bg: linear-gradient(45deg, #ff7043, #ffab40);
+  --button-clear-bg: linear-gradient(45deg, #4fc3f7, #039be5);
+  --input-bg: #f5f5f5;
+  --input-focus-border: #333333;
+  --message-success-color: #388e3c;
+  --message-error-color: #d32f2f;
+  --message-success-shadow: #a5d6a7;
+  --message-error-shadow: #ef9a9a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* High Contrast Mode */
+.app-container.contrast {
+  --bg-color: #000000;
+  --text-color: #ffeb3b;
+  --border-color: #ffeb3b;
+  --button-bg: linear-gradient(45deg, #ffeb3b, #f44336);
+  --button-clear-bg: linear-gradient(45deg, #4caf50, #1b5e20);
+  --input-bg: #1c1c1c;
+  --input-focus-border: #ffeb3b;
+  --message-success-color: #ffeb3b;
+  --message-error-color: #ff5722;
+  --message-success-shadow: #ffeb3b;
+  --message-error-shadow: #ff5722;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main Container */
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Arial', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Heading Styling with Glow Effect */
+.app-heading {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px var(--text-color);
+  animation: glow 2s infinite alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Logo Area */
+.logo {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+/* Filename Input */
+.filename-input {
+  width: 90%;
+  max-width: 550px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: var(--text-color);
+  background: var(--input-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.filename-input:focus {
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 15px var(--input-focus-border);
+}
+
+/* Textarea with Neon Glow */
+.app-textarea {
+  width: 90%;
+  max-width: 600px;
+  height: 35vh;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: var(--text-color);
+  background: var(--input-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--border-color), 0 0 15px var(--border-color);
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.app-textarea:focus {
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 15px var(--input-focus-border), 0 0 25px var(--input-focus-border);
+}
+
+/* File Upload Section */
+.file-upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.file-upload-label {
+  display: inline-block;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.browse-button {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Drop Zone for Drag and Drop */
+.drop-zone {
+  width: 100%;
+  max-width: 550px;
+  color: var(--text-color);
+  background-color: var(--input-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* Character and Word Count Styling */
+.character-count {
+  font-size: 1em;
+  color: var(--border-color);
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px var(--border-color);
+}
+
+/* Button Group Styling */
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Convert and Clear Button Styling */
+.app-button, .clear-button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  color: var(--button-text);
+}
+
+.app-button {
+  background: var(--button-bg);
+  box-shadow: 0 0 10px #ff4081, 0 0 15px #ff4081;
+}
+
+.app-button:hover {
+  transform: scale(1.05);
+}
+
+.clear-button {
+  background: var(--button-clear-bg);
+  box-shadow: 0 0 10px #81d4fa;
+}
+
+.clear-button:hover {
+  transform: scale(1.05);
+}
+
+/* Success and Error Messages */
+.app-message {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  animation: fade-in-out 4s ease forwards;
+}
+
+.success-message {
+  color: var(--message-success-color);
+  text-shadow: 0 0 6px var(--message-success-color), 0 0 12px var(--message-success-shadow);
+}
+
+.error-message {
+  color: var(--message-error-color);
+  text-shadow: 0 0 6px var(--message-error-color), 0 0 12px var(--message-error-shadow);
+}
+
+/* Mode Toggle Button */
+.mode-toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* Keyframes for Animations */
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px var(--text-color), 0 0 20px var(--text-color), 0 0 30px var(--text-color);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    text-shadow: 0 0 15px var(--text-color), 0 0 30px var(--text-color), 0 0 45px var(--text-color);
   }
 }
