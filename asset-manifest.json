@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.634573f8.css",
-    "main.js": "/repository-name/static/js/main.41233d66.js",
-    "static/js/239.add4e55e.chunk.js": "/repository-name/static/js/239.add4e55e.chunk.js",
-    "static/js/213.d63330c8.chunk.js": "/repository-name/static/js/213.d63330c8.chunk.js",
-    "static/js/732.adf19ac7.chunk.js": "/repository-name/static/js/732.adf19ac7.chunk.js",
-    "static/js/453.5e294715.chunk.js": "/repository-name/static/js/453.5e294715.chunk.js",
-    "index.html": "/repository-name/index.html",
-    "main.634573f8.css.map": "/repository-name/static/css/main.634573f8.css.map",
-    "main.41233d66.js.map": "/repository-name/static/js/main.41233d66.js.map",
-    "239.add4e55e.chunk.js.map": "/repository-name/static/js/239.add4e55e.chunk.js.map",
-    "213.d63330c8.chunk.js.map": "/repository-name/static/js/213.d63330c8.chunk.js.map",
-    "732.adf19ac7.chunk.js.map": "/repository-name/static/js/732.adf19ac7.chunk.js.map",
-    "453.5e294715.chunk.js.map": "/repository-name/static/js/453.5e294715.chunk.js.map"
+    "main.css": "/TextToPDFConverter/static/css/main.634573f8.css",
+    "main.js": "/TextToPDFConverter/static/js/main.6e8ad8f3.js",
+    "static/js/239.add4e55e.chunk.js": "/TextToPDFConverter/static/js/239.add4e55e.chunk.js",
+    "static/js/213.d63330c8.chunk.js": "/TextToPDFConverter/static/js/213.d63330c8.chunk.js",
+    "static/js/732.adf19ac7.chunk.js": "/TextToPDFConverter/static/js/732.adf19ac7.chunk.js",
+    "static/js/453.5e294715.chunk.js": "/TextToPDFConverter/static/js/453.5e294715.chunk.js",
+    "index.html": "/TextToPDFConverter/index.html",
+    "main.634573f8.css.map": "/TextToPDFConverter/static/css/main.634573f8.css.map",
+    "main.6e8ad8f3.js.map": "/TextToPDFConverter/static/js/main.6e8ad8f3.js.map",
+    "239.add4e55e.chunk.js.map": "/TextToPDFConverter/static/js/239.add4e55e.chunk.js.map",
+    "213.d63330c8.chunk.js.map": "/TextToPDFConverter/static/js/213.d63330c8.chunk.js.map",
+    "732.adf19ac7.chunk.js.map": "/TextToPDFConverter/static/js/732.adf19ac7.chunk.js.map",
+    "453.5e294715.chunk.js.map": "/TextToPDFConverter/static/js/453.5e294715.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.634573f8.css",
-    "static/js/main.41233d66.js"
+    "static/js/main.6e8ad8f3.js"
   ]
 }
