@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/repository-name/static/css/main.634573f8.css",
+    "main.js": "/repository-name/static/js/main.41233d66.js",
+    "static/js/239.add4e55e.chunk.js": "/repository-name/static/js/239.add4e55e.chunk.js",
+    "static/js/213.d63330c8.chunk.js": "/repository-name/static/js/213.d63330c8.chunk.js",
+    "static/js/732.adf19ac7.chunk.js": "/repository-name/static/js/732.adf19ac7.chunk.js",
+    "static/js/453.5e294715.chunk.js": "/repository-name/static/js/453.5e294715.chunk.js",
+    "index.html": "/repository-name/index.html",
+    "main.634573f8.css.map": "/repository-name/static/css/main.634573f8.css.map",
+    "main.41233d66.js.map": "/repository-name/static/js/main.41233d66.js.map",
+    "239.add4e55e.chunk.js.map": "/repository-name/static/js/239.add4e55e.chunk.js.map",
+    "213.d63330c8.chunk.js.map": "/repository-name/static/js/213.d63330c8.chunk.js.map",
+    "732.adf19ac7.chunk.js.map": "/repository-name/static/js/732.adf19ac7.chunk.js.map",
+    "453.5e294715.chunk.js.map": "/repository-name/static/js/453.5e294715.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.634573f8.css",
+    "static/js/main.41233d66.js"
+  ]
+}
